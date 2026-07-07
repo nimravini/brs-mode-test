@@ -1,0 +1,11 @@
+{
+  "date": "4/1",
+  "markers": "🎯🎯P4G3",
+  "label": "Impressive 🏖️",
+  "entries": [
+    { "name": "Sleep", "value": 35, "maximum": 35, "note": "9h09" },
+    { "name": "Protein", "value": 25, "maximum": 25, "note": "Bolus 15/15 (4B); Grams 10/10 (160g); Penalty 0" },
+    { "name": "Kcal", "value": 25, "maximum": 25, "note": "NET 2890" },
+    { "name": "Tonal", "value": 15, "maximum": 15, "note": "Planned Rest Day on Vacation" }
+  ]
+}
