@@ -1,8 +1,8 @@
-"""Deterministic Body Recomposition Scoring scaffold."""
+"""Deterministic BRS scaffold."""
 
-from .formatting import render_brs
-from .models import BRSResult
-from .parser import load_brs_json
-from .scoring import score_brs
+from .formatting import render
+from .models import Entry, Result
+from .parser import load_json
+from .scoring import score
 
-__all__ = ["BRSResult", "load_brs_json", "render_brs", "score_brs"]
+__all__ = ["Entry", "Result", "load_json", "render", "score"]
