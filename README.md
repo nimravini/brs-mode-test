@@ -12,11 +12,11 @@ This first pass implements the parts visible from the public example snippet:
 - fixed pillar order: Sleep, Protein, Kcal, Tonal
 - limiter ranking by points lost
 - limiter tie order: Sleep → Kcal → Protein → Tonal
-- exact-ish BRS output rendering with nested protein lines
-- fail-closed validation for missing or impossible scores
+- deterministic BRS first-line rendering
+- fail-closed validation for missing or impossible values
 - fixture tests for the two supplied examples
 
-It deliberately **does not invent** the missing private canon for sleep scoring, protein bolus scoring, kcal scoring, Tonal scoring, or vacation overrides. Those need to be added as explicit rules before the tool should calculate from raw daily logs.
+It deliberately **does not invent** the missing private canon for sleep scoring, protein bolus scoring, kcal scoring, Tonal scoring, nested formatting, or vacation overrides. Those need to be added as explicit rules before the tool should calculate from raw daily logs.
 
 ## Quick start
 
@@ -32,12 +32,9 @@ pytest
 ```text
 4/8 38 (Sleep/Tonal/Kcal/Protein) 🎯🎯P4G3
 • Sleep 13/35 (5h31)
-• Protein 14/25
-  • Bolus 8/15 (2B)
-  • Grams 8/10 (145g)
-  • Penalty −2 (7h30 gap)
+• Protein 14/25 (Bolus 8/15 (2B); Grams 8/10 (145g); Gap adjustment)
 • Kcal 11/25 (NET 1295)
-• Tonal 0/15 (Vacation Day Skip)
+• Tonal 0/15 (Skipped)
 ```
 
 ## Shape of the eventual beast
