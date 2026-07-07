@@ -1,0 +1,10 @@
+{
+  "date": "4/8",
+  "markers": "🎯🎯P4G3",
+  "entries": [
+    { "name": "Sleep", "value": 13, "maximum": 35, "note": "5h31" },
+    { "name": "Protein", "value": 14, "maximum": 25, "note": "Bolus 8/15 (2B); Grams 8/10 (145g); Gap adjustment" },
+    { "name": "Kcal", "value": 11, "maximum": 25, "note": "NET 1295" },
+    { "name": "Tonal", "value": 0, "maximum": 15, "note": "Skipped" }
+  ]
+}
